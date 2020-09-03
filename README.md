@@ -20,6 +20,8 @@ php artisan migrate
 
 php artisan key:generate
 
+выходим из bash
+
 exit
 
 Сервис доступен по адресу http://localhost:8098
