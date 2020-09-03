@@ -7,6 +7,7 @@
 переименовываем .env.example в .env
 
 подтягиваем зависимости
+
 composer install
 
 Далее заходим в bash контейнера fpm:
