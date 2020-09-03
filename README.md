@@ -4,6 +4,11 @@
 2. docker-compose build
 3. docker-compose up -d
 
+переименовываем .env.example в .env
+
+подтягиваем зависимости
+composer install
+
 Далее заходим в bash контейнера fpm:
 docker-compose exec fpm bash
 
@@ -11,11 +16,6 @@ docker-compose exec fpm bash
 php artisan migrate
 
 exit
-
-переименовываем .env.example в .env
-
-подтягиваем зависимости
-composer install
 
 Сервис доступен по адресу http://localhost:8098
 
