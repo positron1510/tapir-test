@@ -13,7 +13,12 @@ composer install
 docker-compose exec fpm bash
 
 и выполняем миграции таблиц
+
 php artisan migrate
+
+генерим ключ приложения
+
+php artisan key:generate
 
 exit
 
