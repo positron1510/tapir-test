@@ -16,7 +16,7 @@ php artisan migrate
 
 1. Получение всех записей (пагинация по 10 записей)
 GET http://localhost:8098/api/v1/advertisement
-Необязательные параметры: order_by_created_at, order_by_price значения asc и desc
+Необязательные параметры: order_by_created_at, order_by_price значения asc и desc, per_page страница пагинации
 
 2. Добавление записи
 POST http://localhost:8098/api/v1/advertisement
