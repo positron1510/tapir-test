@@ -7,13 +7,15 @@
 Далее заходим в bash контейнера fpm:
 docker-compose exec fpm bash
 
+и выполняем миграции таблиц
+php artisan migrate
+
+exit
+
 переименовываем .env.example в .env
 
 подтягиваем зависимости
 composer install
-
-и выполняем миграции таблиц
-php artisan migrate
 
 Сервис доступен по адресу http://localhost:8098
 
