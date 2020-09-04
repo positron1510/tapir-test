@@ -50,9 +50,9 @@ class AdvertisementCommand extends Command
 
         try {
             if ($arguments['id']) {
-                $result = $advertisement->repository->single();
+                $result = $advertisement->repository->getSingle();
             }else {
-                $result = $advertisement->repository->all();
+                $result = $advertisement->repository->getAll();
             }
         }catch (ModelNotFoundException $ex) {
             $result['errors'] = $ex->getMessage();
